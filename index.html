@@ -20,6 +20,10 @@
 
 <input type="text" id="123" class="a3232">
 
+<br>
+
+<input type="text" id="123" class="copy">
+
 <button onclick="enviar()">Enviar</button>
 
     <script>
@@ -43,6 +47,8 @@ document.getElementById('br1').innerHTML = data_brasileira;
         var abc= document.querySelector('.a3232').value;
 
         document.getElementById('br2').innerHTML = abc;
+
+        document.querySelector('.copy').value = abc;
 
 
     }
