@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TESTE DATA PT-EN</h1>
+
+    <button type="button" id="teste" onclick="teste()"
+    >
+    Clique para exibir a hora atual.</button>
+    
+    
+    <p id="demo"></p>
+    <p id="br1"></p>
+
+    <script>
+
+
+function teste(){
+var data_americana = document.getElementById('demo').innerHTML = Date();
+  
+var data_brasileira = data_americana.split(' ').reverse().join('/');
+
+document.getElementById('br1').innerHTML = data_brasileira;
+
+}
+
+
+
+    </script>
+
+</body>
+</html>
