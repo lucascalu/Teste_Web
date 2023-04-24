@@ -16,6 +16,11 @@
     
     <p id="demo"></p>
     <p id="br1"></p>
+    <p id="br2"></p>
+
+<input type="text" id="123">
+
+<button onclick="enviar()">Enviar</button>
 
     <script>
 
@@ -29,9 +34,23 @@ document.getElementById('br1').innerHTML = data_brasileira;
 
 }
 
-
-
     </script>
+
+<script>
+
+    function enviar() {
+
+        var abc= document.querySelector('input').value;
+
+        document.getElementById('br2').innerHTML = abc;
+
+
+    }
+    
+  </script>
+
+
+
 
 </body>
 </html>
